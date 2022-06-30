@@ -5,7 +5,9 @@ public class MainRectangle {
 
         Scanner input=new Scanner(System.in);
 
-        Rectangle rect=new Rectangle();
+        Rectangle rect=new Rectangle(70,30);
+        System.out.println("Longueur : "+rect.getLongueur());
+        System.out.println("Largeur : "+rect.getLargeur());
 
         System.out.print("Entrez la longueur : ");
         int longueur=input.nextInt();

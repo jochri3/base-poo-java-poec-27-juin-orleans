@@ -2,6 +2,17 @@ public class Rectangle {
     private int longueur;
     private int largeur;
 
+    public Rectangle(int longueur,int largeur){
+        this.longueur=longueur;
+        this.largeur=largeur;
+    }
+
+// Constructeur par défaut
+    public Rectangle(){
+        longueur=56;
+        largeur=36;
+    }
+
     public int getLongueur(){
         return longueur;
     }
