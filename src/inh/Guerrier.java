@@ -2,24 +2,14 @@ package inh;
 
 //DRY : Don't repeat yourself
 
-public class Guerrier {
-    private String name;
+public class Guerrier extends Personnage{
     private String arme;
-    private int dureeDeVie;
 
     public Guerrier(String name, String arme, int dureeDeVie) {
-        this.name = name;
+        super(name,dureeDeVie);
         this.arme = arme;
-        this.dureeDeVie = dureeDeVie;
     }
 
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
 
     public String getArme() {
         return arme;
@@ -29,11 +19,4 @@ public class Guerrier {
         this.arme = arme;
     }
 
-    public int getDureeDeVie() {
-        return dureeDeVie;
-    }
-
-    public void setDureeDeVie(int dureeDeVie) {
-        this.dureeDeVie = dureeDeVie;
-    }
 }
