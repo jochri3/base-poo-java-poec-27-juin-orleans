@@ -1,4 +1,4 @@
-package inh;
+package heritage;
 
 public class Sorcier extends Magicien{
     private String batonMagique;
@@ -14,5 +14,11 @@ public class Sorcier extends Magicien{
 
     public void setBatonMagique(String batonMagique) {
         this.batonMagique = batonMagique;
+    }
+
+    public String toString(){
+        return String.format("Nom : %s\nDurée de vie : %d\nBaguette : %s\nBaton : %s\n\n"
+                ,this.getName(),
+                this.getDureeDeVie(),this.getBaguetteMagique(),this.getBatonMagique());
     }
 }

@@ -1,6 +1,6 @@
-package inh;
+package heritage;
 
-public class Personnage {
+public abstract class Personnage {
     private String name;
     private int dureeDeVie;
 

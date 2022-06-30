@@ -1,4 +1,4 @@
-package inh;
+package heritage;
 
 public class Magicien extends Personnage{
     private String baguetteMagique;
@@ -14,5 +14,11 @@ public class Magicien extends Personnage{
 
     public void setBaguetteMagique(String baguetteMagique) {
         this.baguetteMagique = baguetteMagique;
+    }
+
+    public String toString(){
+        return String.format("Nom : %s\nDurée de vie : %d\nBaguette : %s\n\n",
+                this.getName(),
+                this.getDureeDeVie(),this.getBaguetteMagique());
     }
 }
